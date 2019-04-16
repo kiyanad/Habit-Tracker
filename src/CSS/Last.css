@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+.paper-background {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+.paper-background:before, .paper-content:before {
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+body,
+.content,
+.paper-date,
+.paper-name {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+
+
+}
+
+body {
+  margin: 0 auto;
+  padding: 30px;
+  width: 960px;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2011/11/yellow-painted-wall-texture.jpg");
+  background-size: contain;
+
+}
+body ::-moz-selection {
+  /* Code for Firefox */
+  color: #333;
+  background: yellow;
+}
+body ::selection {
+  color: #333;
+  background: yellow;
+}
+
+p {
+  line-height: 24px;
+  text-indent: 1.6666666667em;
+}
+
+h5 {
+  bottom: -6px;
+position: relative;
+}
+
+h4{
+  font-size: 12px;
+}
+img{
+  z-index: -1;
+  width: 1100px;
+  height: 1000px;
+  left: -83px;
+  position: relative;
+  top: 216px;
+
+}
+.paper-background {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-top: 75px;
+  width: 81%;
+  height: 800px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  top: -683px;
+  left: 114px;
+    transform: rotate(-14deg);
+  box-shadow: -19px 15px 6px -6px rgba(0, 0, 0, 0.26);
+
+}
+.paper-background:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 96px;
+  left: 24px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+}
+.paper-background:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 96px;
+  z-index: 3;
+  width: 4px;
+  height: 100%;
+  border-left: 4px double #fca1a1;
+}
+
+.paper-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 48px 120px 24px;
+  height: 982px;
+  background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6BA2D8 1px, #f9f9f9);
+  background-size: 100% 24px;
+  line-height: 24px;
+}
+.paper-content:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 384px;
+  left: 24px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.paper-content:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: -75px;
+  bottom: 0;
+  right: 96px;
+  z-index: 4;
+  width: 4px;
+  height: 1000%;
+  border-left: 1px solid #fca1a1;
+}
+
+.paper-name,
+.paper-date {
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  vertical-align: baseline;
+}
+.paper-name:focus,
+.paper-date:focus {
+  outline: none;
+}
+
+.paper-name {
+  left: 120px;
+}
+
+.paper-date {
+  right: 120px;
+  z-index: 5;
+  text-align: right;
+}
+
+.tack {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 350px;
+  z-index: 6;
+  /* opacity: .35; */
+  width: 174px;
+  height: 200px;
+  background-image: url(http://www.clker.com/cliparts/B/V/P/X/Z/e/thumbtack-pushpin-2-hi.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 90px 78px;
+}
+
+.boxes{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: red;
+  height: 40px;
+width: 336px;
+}
+.input-1{
+  color: red;
+  left: 5px;
+  position: relative;
+}
+.input-2{
+  color: purple;
+  left: 5px;
+  position: relative;
+}
+.input-3{
+  color: green;
+  left: 5px;
+  position: relative;
+}
+.input-4{
+  color: green;
+  left: 5px;
+  position: relative;
+}
+.input-5{
+  color: orange;
+  left: 5px;
+  position: relative;
+}
+.input-6{
+  color: blue;
+  left: 5px;
+  position: relative;
+}
+
+.boxes-2{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: purple;
+  height: 40px;
+width: 336px;
+}
+.boxes-3{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: yellow;
+  height: 40px;
+width: 336px;
+}
+.boxes-4{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: green;
+  height: 40px;
+width: 336px;
+}
+.boxes-5{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: orange;
+  height: 40px;
+width: 336px;
+}
+.boxes-6{
+  height: 55px;
+  width: 340px;
+  margin-bottom: 23px;
+  position: relative;
+  left: -15px;
+  border-radius: 176px 49px 169px 70px/58px 149px 52px 185px;
+  border: solid 2px hsla(0, 95%, 35%, 1);
+  border-color: blue;
+  height: 40px;
+width: 336px;
+}
+
+
+.inputs {
+  /* background-color: red; */
+  width: 100px;
+  left: 18px;
+  position: relative;
+  margin-right: 11px;
+  height: 59px;
+  top: 6px;
+
+  /* content: " "; */
+
+  background-image: url(https://images.vexels.com/media/users/3/154553/isolated/preview/c476942307ebbbcc998638fa81671afc-hand-drawn-circle-element-by-vexels.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+    background-size: contain;}
+
+.flex-container{
+  display: flex;
+  margin-bottom: 29px;
+
+
+}
+
+.num {
+position: relative;
+left: -40px;
+top: -16px;
+}
+.num-2 {
+position: relative;
+top: -17px;
+left: -48px;
+}
+.num-3 {
+position: relative;
+left: -46px;
+top: -18px;
+}
+.num-4 {
+position: relative;
+left: -50px;
+top: -20px;
+}
+.num-5 {
+position: relative;
+left: -51px;
+top: -21px;
+}
+.num-6 {
+position: relative;
+top: -22px;
+left: -50px;
+}
+
+/* #color {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,.1) -95%, red 100%)
+} */

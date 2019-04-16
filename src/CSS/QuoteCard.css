@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+      padding: 0;
+      z-index: -1;
+      overflow: visible;
+      /* clear: both; */
+    width: 100%;
+
+}
+
+body {
+  background-color: saddlebrown;
+  z-index: -1;
+  overflow: auto;
+    clear: both;
+
+}
+
+.container {
+  width: 40%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  perspective: 140px;
+  position: relative;
+top: 191px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  width: 100%;
+  height: 200px;
+  transition: height, width, transform;
+  transition-duration: .5s, .2s;
+  transition-timing-function: ease, linear;
+  transition-delay: 0, .5s;
+  transform: rotateX(0);
+  box-shadow: 10px 10px 8px;
+
+}
+input[type=radio]:checked + label h1 {
+  font-size: 2em;
+  padding-left: 5px;
+  height: 40px;
+}
+input[type=radio]:checked + label p {
+  font-size: 1em;
+  opacity: 1;
+  transition: opacity .1s linear .7s;
+}
+
+label {
+  background-color: #fff;
+  display: block;
+  width: 70%;
+  height: 33.6px;
+  overflow: hidden;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height, width, transform;
+  transition-duration: .5s, .2s, .2s;
+  transition-timing-function: ease, linear, linear;
+  transition-delay: .2s, 0, 0;
+  transform: rotateX(-15deg);
+  background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
+background-size: cover;
+}
+label h1 {
+  font-size: 1.4em;
+  background-color: #fff;
+  padding-left: 5px;
+  font-family: sans;
+  height: 28px;
+  z-index: 1;
+}
+label p {
+  font-size: 1em;
+  padding: 5px;
+  font-family: sans;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .1s, linear, 0;
+}
+
+.QuoteBack{
+  background-image: url(https://us.123rf.com/450wm/winterbee/winterbee1607/winterbee160700129/60130828-turquoise-blue-gradient-polygon-shaped-background-.jpg?ver=6);
+background-size: cover;
+height: 700px;
+position: relative;
+top: -100px;
+}

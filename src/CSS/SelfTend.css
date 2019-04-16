@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+.paper-background {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+.paper-background:before, .paper-content:before {
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+body,
+.content,
+.paper-date,
+.paper-name {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+
+}
+.paper-background {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-top: 75px;
+  width: 81%;
+  height: 800px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  left: 114px;
+    transform: rotate(-14deg);
+  box-shadow: -19px 15px 6px -6px rgba(0, 0, 0, 0.26);
+
+}
+.paper-background:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 96px;
+  left: 24px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+}
+.paper-background:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 96px;
+  z-index: 3;
+  width: 4px;
+  height: 100%;
+  border-left: 4px double #fca1a1;
+}
+
+.paper-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 48px 120px 24px;
+  height: 982px;
+  background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 23px, #6BA2D8 1px, #f9f9f9);
+  background-size: 100% 24px;
+  line-height: 24px;
+}
+.paper-content:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 384px;
+  left: 24px;
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.paper-content:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: -75px;
+  bottom: 0;
+  right: 96px;
+  z-index: 4;
+  width: 4px;
+  height: 1000%;
+  border-left: 1px solid #fca1a1;
+}
+
+.paper-name,
+.paper-date {
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  vertical-align: baseline;
+}
+.paper-name:focus,
+.paper-date:focus {
+  outline: none;
+}
+
+.paper-name {
+  left: 120px;
+}
+
+.paper-date {
+  right: 120px;
+  z-index: 5;
+  text-align: right;
+}
+
+.flex-container{
+  display: flex;
+
+}
+
+.column-1{
+  margin-top: 165px;
+  height: 500px;
+width: 250px;
+margin-right: 25px;
+border-style: dashed;
+border-width: 3px
+}
+.column-2{
+  margin-top: 165px;
+  height: 500px;
+width: 250px;
+margin-right: 25px;
+border-style: dashed;
+border-width: 3px
+}
+.column-3{
+  margin-top: 165px;
+  height: 500px;
+width: 250px;
+margin-right: 25px;
+border-style: dashed;
+border-width: 3px
+}

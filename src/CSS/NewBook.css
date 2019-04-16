@@ -1,0 +1,219 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: BookFont2;
+  src: url('../HabitTracker/HabitFonts/Book2.otf');
+}
+
+
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #BFB4FF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 9999;
+}
+.wrapper h2 {
+  color: #644cad;
+  font-weight: 400;
+  font-family: BookFont2;
+  font-size: 7vw;
+  position: relative;
+  top: 2vw;
+  left: -28vw;
+}
+.wrapper input {
+  padding: 12px;
+font-size: 28px;
+min-width: 200px;
+top: -8px;
+font-family: BookFont2;
+margin-left: 13px;
+
+}
+
+.newbook {
+  padding-top: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: skew(30deg, 0deg) rotate(-15deg);
+  transform: skew(30deg, 0deg) rotate(-15deg);
+  position: relative;
+  top: -26vw;
+  left: -4vw;
+
+}
+.newbook .cover {
+  height: 29vw;
+      width: 30vw;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* background-image: url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Paste+Image+URL+480%C3%97600&w=480&h=600"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://totalwallcovering.com/images/product/mesh-texture-mknx-l.jpg);
+
+}
+.newbook .cover:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  width: 6px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.newbook .cover:after {
+  content: '';
+  display: inline-block;
+  width: 30vw;
+  height: 40px;
+  position: absolute;
+  bottom: -40px;
+  -webkit-transform: skewX(-45deg) translate(-20px, 0px);
+  -moz-transform: skewX(-45deg) translate(-20px, 0px);
+  -ms-transform: skewX(-45deg) translate(-20px, 0px);
+  -o-transform: skewX(-45deg) translate(-20px, 0px);
+  transform: skewX(-45deg) translate(-20px, 0px);
+  background: #c4c4c4;
+  background: -webkit-linear-gradient(45deg, #c4c4c4, #EEE);
+  background: linear-gradient(45deg, #c4c4c4, #EEE);
+}
+.newbook .spine {
+  height: 29vw;
+  width: 2.5vw;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  background: #c4c4c4;
+  background: -webkit-linear-gradient(90deg, #c4c4c4, #EEE);
+  background: linear-gradient(90deg, #c4c4c4, #EEE);
+  -webkit-transform: skewY(-45deg) translate(0px, 20px);
+  -moz-transform: skewY(-45deg) translate(0px, 20px);
+  -ms-transform: skewY(-45deg) translate(0px, 20px);
+  -o-transform: skewY(-45deg) translate(0px, 20px);
+  transform: skewY(-45deg) translate(0px, 20px);
+  content: attr(data-text);
+  font-size: 22px;
+  letter-spacing: 30px;
+  overflow-wrap: break-word;
+  color: #333;
+  padding: 13px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+      background-image: url(https://totalwallcovering.com/images/product/mesh-texture-mknx-l.jpg);
+}
+
+.newbooktitle{
+  width: 298px;
+  left: 100px;
+  position: relative;
+  height: 283px;
+  top: -124px;
+  color: black;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 3px 3px 4px rgba(0,0,0,.7);
+  font-size: 43px;
+  word-break: break-all;
+}
+
+.newbookauthor {
+  height: 100px;
+  width: 300px;
+  position: relative;
+  left: 100px;
+  top: 39px;
+  color: black;
+  text-shadow: 3px 1px 5px rgba(255,255,255,.3), 3px 1.6px 3px rgba(0,0,0,.7);
+  font-size: 24px;
+  word-break: break-all;
+
+
+}
+
+form{
+  position: relative;
+  top: -22vw;
+  left: 31vw;
+  font-family: BookFont2;
+  font-size: 4vw;
+}
+
+.newImg{
+  width: 351px;
+  position: relative;
+  top: 173px;
+  left: 80px;
+  z-index: 2;
+  height: 162px;
+}
+
+.button4{
+
+    border-radius: 3em;
+    border-color: #e53a40;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #BC1A28 5%, #145ae5 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #DEFF14 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 171, 156, 0.6) 25%, #145ae5 25%, #BF09E0 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 30%, #BC1A18 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #deff07 49%, #BF09EE 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1ABC9E 55%, #BC1A16 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #deff07 65%, #bc1a2a 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #bc1a2a 75%, #bf09f2 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #deff07 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #BF09F1 95%, #1abc9c 100%);
+    background-position: 0 0;
+    background-size: 47%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 12800ms ease-in-out;
+    position: absolute;
+    left: 7vw;
+    height: 5vw;
+    width: 26vw;
+    z-index: 2;
+    top: 18vw;
+    font-size: 1.2vw;
+    font-weight: 900;
+    color: darkblue;
+
+
+
+}
+.button4:hover {
+  background-position: 10021px;
+}
